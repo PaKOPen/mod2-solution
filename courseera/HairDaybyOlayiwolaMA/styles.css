@@ -1,0 +1,147 @@
+* {
+    box-sizing:border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+    margin: 0;
+    background-color: beige;
+}
+::-webkit-scrollbar{
+    background-color: rgb(148, 140, 132);
+}
+header {
+    text-align: center;
+    margin-top: 20px;
+}
+header img {
+    width: 200px;
+}
+nav {
+    position: sticky;
+    top: 0
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: rgb(61, 15, 15);
+}
+nav li {
+    padding: 10px; 
+    border-right: 1px solid white;
+    display: inline-flex;
+}
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 5px
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+section  {
+    display: flex
+}
+section img {
+    width: 500px;
+}
+.bannerHere {
+    margin: 20px auto;
+}
+footer {
+    background-color: rgb(61, 15, 15);
+    height: auto;
+    display: flex;
+    position: relative;
+    background-image: url("images/logoBText.png");
+    background-size: cover;
+    background-blend-mode:soft-light;
+    background-repeat: no-repeat;
+}
+footer div.logo {
+    flex: 1;
+}
+ footer .container {
+    display: flex;
+    
+ }
+footer div {
+    flex: 1
+}
+footer img {
+    width: 100px;
+    /* flex: 1; */
+    /* display: absolute; */
+    top: 10 px
+}
+footer p {
+    padding-top: 20px; 
+    color: white;
+    flex: 1;
+    text-align: right;
+    top: 200px 
+
+}
+.box {
+    width: 80%;
+    padding: 10px;
+    margin: 10px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.box img {
+    padding: 0;
+    margin: 0;
+    /* height: 200px; */
+    width: 100px;
+
+}
+section a {
+    text-decoration: none;
+    background-color: black;
+    padding: 10px 20px;
+    border-radius: 0 50% 50px 0;
+    color: white;
+    display: inline-block;
+    transition: background-color 0.4s ease-out 0.2s;
+    transition: color 0.2s ease-out 0.2s;
+}
+section a:hover {
+    text-decoration: underline;
+    background-color: rgb(160, 158, 158);
+    color: black;
+
+}
+@media only screen and (max-width: 1000px) {
+    section {
+        display: block; 
+        /* item-align: center */
+    }
+    .box {
+        width: 400px;
+        margin: 20px auto;
+    }
+    section img {
+        display: block;
+        width: 400px;
+        margin: 10px auto;
+
+    }
+    .bannerHere {
+        margin: 20px auto;
+    }
+    nav li {
+        padding: 2px; 
+        border: 0px solid white;
+        border-bottom: 1px solid white;
+        text-align: center;
+        display:block;
+    }
+    nav {
+        position: relative;
+    }
+}
