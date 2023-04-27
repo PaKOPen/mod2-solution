@@ -1,0 +1,75 @@
+/* Main Styles */
+* {box-sizing: border-box}
+body{
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    text-align: center;
+}
+.container {
+    padding: 10px;
+    max-width: 1000px;
+    margin: auto
+}
+h4 { 
+    display: inline-block;
+    float: right;
+    text-align: center;
+    padding: 3px 0 ;
+    margin: 0 0 5px 0;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    width: 100px;
+}
+div {
+    border: 2px solid black;
+    margin: 0 10px 10px 0;
+    background-color:rgb(233, 233, 233);
+}
+p {
+    clear: right; 
+    padding: 10px;
+    margin: 0;   
+}
+.chicken {
+    background-color: blanchedalmond;
+}
+.beef {
+    background-color: greenyellow;
+}
+.sushi {
+    background-color: rgb(93, 93, 151);
+}
+/* Desktop view */
+@media (min-width: 992px) {
+    .col-lg-4 {
+        max-width: 32%;
+        float: left;
+    }
+    
+}
+/* Tablet view */
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-md-6 {
+        width: 48.6%;
+        float: left;
+    }
+    .col-md-12 {
+        width: 98.7%;
+        float: left;
+    }
+}
+/* Phone view */
+@media (max-width: 767px) {
+    .col-sm-12 {
+        width: 100%;
+        float: left;
+    }
+}
+
+footer {
+    position: absolute;
+    bottom: 3px;   
+    position: fixed; 
+}
